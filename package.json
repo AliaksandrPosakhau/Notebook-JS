@@ -1,0 +1,14 @@
+{
+  "name": "ht1",
+  "version": "1.0.0",
+  "description": "Hometask 01 - notebook with console operations support",
+  "main": "app.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Aliaksandr Posakhau",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^14.0.0"
+  }
+}
