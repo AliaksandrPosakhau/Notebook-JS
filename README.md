@@ -35,7 +35,7 @@ Options:<br>
 C:\--JS--\PRACTICAL TASKS\HT1>node app write -t=tracker -b="Next note to previous one"<br>
 Note created successfully
 
-C:\--JS--\PRACTICAL TASKS\HT1>node app list
+C:\--JS--\PRACTICAL TASKS\HT1>node app list 
 
 List of all current titles:
 ----------------------------
@@ -57,7 +57,7 @@ Body: Next note to previous one
 
 C:\--JS--\PRACTICAL TASKS\HT1>node app delete -t=tracker
 
-Deleting note with title: tracker
+Deleting note with title: tracker <br>
 Note has been deleted successfully
 
 C:\--JS--\PRACTICAL TASKS\HT1>node app list
