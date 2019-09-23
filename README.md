@@ -52,7 +52,7 @@ C:\--JS--\PRACTICAL TASKS\HT1>node app read -t=tracker
 
 Reading note with title: tracker
 ----------------------------
-Title: tracker
+Title: tracker <br>
 Body: Next note to previous one
 
 C:\--JS--\PRACTICAL TASKS\HT1>node app delete -t=tracker
