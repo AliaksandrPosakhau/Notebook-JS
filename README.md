@@ -30,7 +30,7 @@ Options:<br>
   --version  Show version number                                       [boolean]<br>
 
 
-<b>Run report:<b> <br>
+<b>Run report:</b> <br>
 
 C:\--JS--\PRACTICAL TASKS\HT1>node app write -t=tracker -b="Next note to previous one"<br>
 Note created successfully
