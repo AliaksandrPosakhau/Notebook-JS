@@ -2,7 +2,7 @@
 Node.js version 10.16.3, standart default installation <br>
 Practical task for JS transformation program
 
-<h2>Supporting operations:</h2>
+<h2>Supported operations:</h2>
 
 <b>node app write --title=check --body=checkerField</b> <br>
 <b>node app write -t=check -b=checkerField</b> <br>
