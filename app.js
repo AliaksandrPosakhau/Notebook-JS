@@ -54,7 +54,7 @@ let argv = yargs
                 describe:"title of the note",
                 alias:"t"
             }
-        }).alias("read","r")
+        })
     .command(
         "list","printing all titles of all notes"
     )
@@ -84,7 +84,9 @@ switch (operation) {
       break;
              default:
       console.log('Unknown operation - cannot perform any actions...');
+
+
 }
-  
+
 
  
