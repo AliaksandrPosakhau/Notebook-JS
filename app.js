@@ -1,7 +1,4 @@
-
-const path = require('path');
 const yargs = require('yargs');
-const fs = require ('fs')
 const Notebook = require('./Notebook.js');
 
 
@@ -24,28 +21,60 @@ const Notebook = require('./Notebook.js');
 
 */
 
-//running application
-console.log('Notebook application started...');
-console.log(yargs.argv);
+let argv = yargs
+    .command("add","adding new note", {
+        title:{
+            describe:"title of the note",
+            alias:"t"
+        },
+        body:{
+            describe:"body of the note",
+            alias:"b"
+        }
+    })
+    .command("write","also adding new note", {
+        title:{
+            describe:"title of the note",
+            alias:"t"
+        },
+        body:{
+            describe:"body of the note",
+            alias:"b"
+        }
+    })
+    .command("delete","deleting note from notebook by its title", {
+        title:{
+            describe:"title of the note",
+            alias:"t"
+        }
+    })
+    .command(
+        "read","printing note in console by its title", {
+            title:{
+                describe:"title of the note",
+                alias:"t"
+            }
+        }).alias("read","r")
+    .command(
+        "list","printing all titles of all notes"
+    )
+    .argv;
 
-//acquiring current operation from the command line
+
 let operation = yargs.argv._.toString();
 
- // let myNotebook = new Notebook();
+let myNotebook = new Notebook();
 
+switch (operation) {
+    case "add":
+        myNotebook.createNewNote(yargs.argv.title,yargs.argv.body);
+        break;
 
-
-
-
-//operations logic
-switch (operation) {            
     case "write":
         myNotebook.createNewNote(yargs.argv.title,yargs.argv.body);
       break;            
      case "read":
-      // myNotebook.readNote(yargs.argv.title);
          Notebook.prototype.readNote('navigate');
-
          break;
         case "list":
             myNotebook.printTitlesOfAllNotes();
@@ -55,7 +84,6 @@ switch (operation) {
       break;
              default:
       console.log('Unknown operation - cannot perform any actions...');
-     
 }
   
 
