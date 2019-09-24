@@ -1,5 +1,6 @@
 # Notebook-JS
-Node.js version 10.16.3, standart default installation <br>
+Node.js version 10.16.3, yargs 14.0.0,<br>
+standart default installation <br>
 Practical task for JS transformation program
 
 <h2>Supported operations:</h2>
